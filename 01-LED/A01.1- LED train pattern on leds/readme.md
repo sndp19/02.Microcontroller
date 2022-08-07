@@ -1,6 +1,6 @@
-#Problem Statement:
+# Problem Statement:
 
-##Write an Embedded C program to display a pattern on the LEDs.
+## Write an Embedded C program to display a pattern on the LEDs.
 
 **Output Requirements:**
 1.	Consider 8 LEDs from the Board, these LEDs has to glow one by one as if a train bogie coming out of a tunnel every second (approx., none without timer implementation)from Left to Right as soon as the board is powered on or reset (Let’s call it as exit)
