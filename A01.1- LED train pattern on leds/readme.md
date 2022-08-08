@@ -12,7 +12,7 @@
 
 4)This process of changing direction has to be repeated between every exit and entry of the train.
 
-** Inputs:**
+**Inputs:**
 
 No external inputs
 
