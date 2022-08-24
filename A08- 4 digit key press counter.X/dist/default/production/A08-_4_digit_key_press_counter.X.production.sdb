@@ -1,0 +1,98 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"13 D:\02Programming folder\#02-Emertxe Microcontroller Module\A08- 4 digit key press counter.X\main.c
+[v _init_config init_config `(v  1 s 1 init_config ]
+"18
+[v _main main `(v  1 e 1 0 ]
+"3 D:\02Programming folder\#02-Emertxe Microcontroller Module\A08- 4 digit key press counter.X\ssd.c
+[v _init_ssd init_ssd `(v  1 e 1 0 ]
+"15
+[v _display_ssd display_ssd `(v  1 e 1 0 ]
+"166 C:/Program Files (x86)/Microchip/MPLABX/v5.35/packs/Microchip/PIC16Fxxx_DFP/1.2.33/xc8\pic\include\proc\pic16f877a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"340
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1325
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1499
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2674
+[v _RB0 RB0 `VEb  1 e 0 @48 ]
+"18 D:\02Programming folder\#02-Emertxe Microcontroller Module\A08- 4 digit key press counter.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"22
+[v main@digit digit `[10]uc  1 a 10 8 ]
+[v main@ssd ssd `[4]uc  1 a 4 22 ]
+"19
+[v main@delay delay `ul  1 a 4 18 ]
+"21
+[v main@once once `uc  1 a 1 26 ]
+"20
+[v main@count count `i  1 s 2 count ]
+"22
+[v main@F864 F864 `[10]uc  1 s 10 F864 ]
+"51
+} 0
+"13
+[v _init_config init_config `(v  1 s 1 init_config ]
+{
+"16
+} 0
+"3 D:\02Programming folder\#02-Emertxe Microcontroller Module\A08- 4 digit key press counter.X\ssd.c
+[v _init_ssd init_ssd `(v  1 e 1 0 ]
+{
+"13
+} 0
+"15
+[v _display_ssd display_ssd `(v  1 e 1 0 ]
+{
+[v display_ssd@data data `*.4uc  1 a 1 wreg ]
+"28
+[v display_ssd@wait wait `ul  1 a 4 4 ]
+"18
+[v display_ssd@digit digit `i  1 a 2 9 ]
+"15
+[v display_ssd@data data `*.4uc  1 a 1 wreg ]
+[v display_ssd@data data `*.4uc  1 a 1 8 ]
+"35
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 6 ]
+[v ___awmod@counter counter `uc  1 a 1 5 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 0 ]
+[v ___awmod@dividend dividend `i  1 p 2 2 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v2.36\pic\sources\c90\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 2 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 1 ]
+[v ___awdiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 7 ]
+[v ___awdiv@dividend dividend `i  1 p 2 9 ]
+"41
+} 0
