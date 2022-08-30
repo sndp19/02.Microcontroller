@@ -1,0 +1,480 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+end_init CODE 0 0 0 3 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/production\InternalEEPROM.X.production.o
+cinit CODE 0 7E7 7E7 19 2
+text1 CODE 0 5A4 5A4 2A 2
+text2 CODE 0 563 563 B 2
+text3 CODE 0 56E 56E C 2
+text4 CODE 0 553 553 6 2
+text5 CODE 0 631 631 36 2
+text6 CODE 0 5CE 5CE 2D 2
+text7 CODE 0 58D 58D 17 2
+text8 CODE 0 5FB 5FB 36 2
+text9 CODE 0 667 667 59 2
+text10 CODE 0 6C0 6C0 69 2
+idataCOMMON CODE 0 552 552 1 2
+maintext CODE 0 729 729 BE 2
+cstackCOMMON COMMON 1 70 70 C 1
+cstackBANK0 BANK0 1 20 20 18 1
+inittext CODE 0 57A 57A 13 2
+idataBANK0 CODE 0 559 559 A 2
+dataBANK0 BANK0 1 38 38 A 1
+dataCOMMON COMMON 1 7D 7D 1 1
+bssCOMMON COMMON 1 7C 7C 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 42-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 42-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-551 2
+CONST 800-1FFF 2
+ENTRY 3-551 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-551 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+EEDATA 2100-21FF 2
+STRCODE 3-551 2
+STRCODE 800-1FFF 2
+STRING 3-551 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\InternalEEPROM.X.production.o
+7E7 cinit CODE >880:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7E7 cinit CODE >883:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7E7 cinit CODE >938:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7E8 cinit CODE >939:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7E9 cinit CODE >940:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7EA cinit CODE >941:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7EB cinit CODE >942:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7EC cinit CODE >943:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7ED cinit CODE >944:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7EE cinit CODE >945:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7EF cinit CODE >946:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7F0 cinit CODE >947:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7F5 cinit CODE >951:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7FA cinit CODE >952:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7FB cinit CODE >956:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7FC cinit CODE >962:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7FC cinit CODE >964:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+7FD cinit CODE >965:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+6C0 text10 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6C0 text10 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6C3 text10 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6C7 text10 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6CC text10 CODE >16:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6CE text10 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6D2 text10 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6D7 text10 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6DB text10 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6DD text10 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6E3 text10 CODE >24:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6E5 text10 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6E6 text10 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6ED text10 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6F1 text10 CODE >25:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6F5 text10 CODE >30:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+6FC text10 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+706 text10 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+70C text10 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+70D text10 CODE >35:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+714 text10 CODE >36:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+71A text10 CODE >38:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+71F text10 CODE >39:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+724 text10 CODE >40:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+728 text10 CODE >41:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awdiv.c
+667 text9 CODE >5:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+667 text9 CODE >12:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+668 text9 CODE >13:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+66C text9 CODE >14:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+671 text9 CODE >15:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+673 text9 CODE >17:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+677 text9 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+67C text9 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+682 text9 CODE >20:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+684 text9 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+685 text9 CODE >22:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+68C text9 CODE >23:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+690 text9 CODE >21:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+694 text9 CODE >26:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+69E text9 CODE >27:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+6A4 text9 CODE >28:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+6AB text9 CODE >29:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+6B1 text9 CODE >31:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+6B6 text9 CODE >32:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+6BB text9 CODE >33:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+6BF text9 CODE >34:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\common\awmod.c
+5FB text8 CODE >15:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\ssd.c
+5FC text8 CODE >19:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\ssd.c
+5FD text8 CODE >21:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\ssd.c
+607 text8 CODE >22:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\ssd.c
+614 text8 CODE >24:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\ssd.c
+626 text8 CODE >25:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\ssd.c
+630 text8 CODE >26:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\ssd.c
+58D text7 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeread.c
+58E text7 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeread.c
+58E text7 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeread.c
+595 text7 CODE >18:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeread.c
+5A3 text7 CODE >19:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eeread.c
+5CE text6 CODE >6:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eewrite.c
+5CF text6 CODE >8:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eewrite.c
+5FA text6 CODE >9:C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c90\pic\__eewrite.c
+631 text5 CODE >12:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+632 text5 CODE >16:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+638 text5 CODE >18:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+642 text5 CODE >19:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+643 text5 CODE >20:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+649 text5 CODE >22:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+652 text5 CODE >23:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+653 text5 CODE >26:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+659 text5 CODE >28:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+663 text5 CODE >30:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+665 text5 CODE >32:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+665 text5 CODE >34:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+666 text5 CODE >35:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+553 text4 CODE >4:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\digital_keypad.c
+553 text4 CODE >7:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\digital_keypad.c
+558 text4 CODE >8:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\digital_keypad.c
+56E text3 CODE >4:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\ssd.c
+56E text3 CODE >7:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\ssd.c
+571 text3 CODE >10:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\ssd.c
+574 text3 CODE >12:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\ssd.c
+579 text3 CODE >13:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\ssd.c
+563 text2 CODE >37:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+563 text2 CODE >38:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+568 text2 CODE >39:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+56D text2 CODE >41:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+5A4 text1 CODE >10:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\digital_keypad.c
+5A5 text1 CODE >14:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\digital_keypad.c
+5AA text1 CODE >16:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\digital_keypad.c
+5AF text1 CODE >20:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\digital_keypad.c
+5BF text1 CODE >22:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\digital_keypad.c
+5C1 text1 CODE >26:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\digital_keypad.c
+5CA text1 CODE >28:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\digital_keypad.c
+5CC text1 CODE >32:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\digital_keypad.c
+5CD text1 CODE >33:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\digital_keypad.c
+729 maintext CODE >43:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+729 maintext CODE >46:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+740 maintext CODE >48:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+745 maintext CODE >51:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+750 maintext CODE >53:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+75B maintext CODE >58:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+775 maintext CODE >59:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+79C maintext CODE >60:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+7C3 maintext CODE >61:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+7DD maintext CODE >62:C:\Users\Emertxe\Desktop\MC template codes\uploaded codes\11-DataStorage-Sources\InternalEEPROM.X\main.c
+57A inittext CODE >912:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+57A inittext CODE >913:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+57B inittext CODE >914:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+57C inittext CODE >915:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+57D inittext CODE >916:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+57E inittext CODE >923:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+57E inittext CODE >924:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+583 inittext CODE >925:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+584 inittext CODE >926:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+585 inittext CODE >927:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+586 inittext CODE >928:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+587 inittext CODE >929:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+588 inittext CODE >930:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+589 inittext CODE >931:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+58A inittext CODE >932:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+58B inittext CODE >933:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+58C inittext CODE >934:C:\Users\Emertxe\AppData\Local\Temp\s61o.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+___awdiv@counter 20 0 BANK0 1 cstackBANK0 dist/default/production\InternalEEPROM.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__size_of_init_ssd 0 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+_main E52 0 CODE 0 maintext dist/default/production\InternalEEPROM.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+start 0 0 CODE 0 init C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+__size_of___awdiv 0 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__end_of_init_digital_keypad AB2 0 CODE 0 text4 dist/default/production\InternalEEPROM.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 76 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+read_digital_keypad@mode 71 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+read_digital_keypad@once 7D 0 COMMON 1 dataCOMMON dist/default/production\InternalEEPROM.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_init_ssd ADC 0 CODE 0 text3 dist/default/production\InternalEEPROM.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+___awdiv@sign 21 0 BANK0 1 cstackBANK0 dist/default/production\InternalEEPROM.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_init_ssd AF4 0 CODE 0 text3 dist/default/production\InternalEEPROM.X.production.o
+__pidataCOMMON AA4 0 CODE 0 idataCOMMON dist/default/production\InternalEEPROM.X.production.o
+eeprom_test@key 74 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+eeprom_test@count 7C 0 COMMON 1 bssCOMMON dist/default/production\InternalEEPROM.X.production.o
+___awdiv@dividend 79 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+_EECON1bits 18C 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+_display BF6 0 CODE 0 text8 dist/default/production\InternalEEPROM.X.production.o
+_EECON1 18C 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+_EECON2 18D 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+_EEDATA 10C 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+main@key 36 0 BANK0 1 cstackBANK0 dist/default/production\InternalEEPROM.X.production.o
+main@ssd 32 0 BANK0 1 cstackBANK0 dist/default/production\InternalEEPROM.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___awdiv@divisor 77 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+__end_of___awdiv E52 0 CODE 0 text10 dist/default/production\InternalEEPROM.X.production.o
+__end_of___awmod D80 0 CODE 0 text9 dist/default/production\InternalEEPROM.X.production.o
+eeprom_write@addr 72 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+___stacklo 0 0 ABS 0 - C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+_init_config AC6 0 CODE 0 text2 dist/default/production\InternalEEPROM.X.production.o
+_eeprom_read B1A 0 CODE 0 text7 dist/default/production\InternalEEPROM.X.production.o
+_eeprom_test C62 0 CODE 0 text5 dist/default/production\InternalEEPROM.X.production.o
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+__size_of_read_digital_keypad 0 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+start_initialization FCE 0 CODE 0 cinit dist/default/production\InternalEEPROM.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\InternalEEPROM.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+_read_digital_keypad B48 0 CODE 0 text1 dist/default/production\InternalEEPROM.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FCE 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+_INTCONbits B 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 2008 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+eeprom_write@value 70 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Emertxe\AppData\Local\Temp\s61o.o
+_eeprom_write B9C 0 CODE 0 text6 dist/default/production\InternalEEPROM.X.production.o
+__pdataBANK0 38 0 BANK0 1 dataBANK0 dist/default/production\InternalEEPROM.X.production.o
+___awmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+__end_of_read_digital_keypad B9C 0 CODE 0 text1 dist/default/production\InternalEEPROM.X.production.o
+__ptext10 D80 0 CODE 0 text10 dist/default/production\InternalEEPROM.X.production.o
+___awdiv D80 0 CODE 0 text10 dist/default/production\InternalEEPROM.X.production.o
+___awmod CCE 0 CODE 0 text9 dist/default/production\InternalEEPROM.X.production.o
+__pmaintext E52 0 CODE 0 maintext dist/default/production\InternalEEPROM.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__Hinittext 0 0 ABS 0 inittext -
+main@F864 38 0 BANK0 1 dataBANK0 dist/default/production\InternalEEPROM.X.production.o
+main@count 37 0 BANK0 1 cstackBANK0 dist/default/production\InternalEEPROM.X.production.o
+__size_of_eeprom_write 0 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__size_of_display 0 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__end_of_init_config ADC 0 CODE 0 text2 dist/default/production\InternalEEPROM.X.production.o
+__end_of_eeprom_read B48 0 CODE 0 text7 dist/default/production\InternalEEPROM.X.production.o
+__end_of_eeprom_test CCE 0 CODE 0 text5 dist/default/production\InternalEEPROM.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 7C 0 COMMON 1 bssCOMMON dist/default/production\InternalEEPROM.X.production.o
+init_fetch0 AF4 0 CODE 0 inittext dist/default/production\InternalEEPROM.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+main@digits 28 0 BANK0 1 cstackBANK0 dist/default/production\InternalEEPROM.X.production.o
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__end_of_eeprom_write BF6 0 CODE 0 text6 dist/default/production\InternalEEPROM.X.production.o
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\InternalEEPROM.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 22 0 BANK0 1 cstackBANK0 dist/default/production\InternalEEPROM.X.production.o
+?___awdiv 77 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+__ptext1 B48 0 CODE 0 text1 dist/default/production\InternalEEPROM.X.production.o
+__ptext2 AC6 0 CODE 0 text2 dist/default/production\InternalEEPROM.X.production.o
+__ptext3 ADC 0 CODE 0 text3 dist/default/production\InternalEEPROM.X.production.o
+__ptext4 AA6 0 CODE 0 text4 dist/default/production\InternalEEPROM.X.production.o
+__ptext5 C62 0 CODE 0 text5 dist/default/production\InternalEEPROM.X.production.o
+__ptext6 B9C 0 CODE 0 text6 dist/default/production\InternalEEPROM.X.production.o
+__ptext7 B1A 0 CODE 0 text7 dist/default/production\InternalEEPROM.X.production.o
+__ptext8 BF6 0 CODE 0 text8 dist/default/production\InternalEEPROM.X.production.o
+__ptext9 CCE 0 CODE 0 text9 dist/default/production\InternalEEPROM.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_init_digital_keypad 0 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\InternalEEPROM.X.production.o
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+display@digit 74 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__end_of_display C62 0 CODE 0 text8 dist/default/production\InternalEEPROM.X.production.o
+__pidataBANK0 AB2 0 CODE 0 idataBANK0 dist/default/production\InternalEEPROM.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+init_ram0 AFC 0 CODE 0 inittext dist/default/production\InternalEEPROM.X.production.o
+display@data 73 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+display@wait 71 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+_init_digital_keypad AA6 0 CODE 0 text4 dist/default/production\InternalEEPROM.X.production.o
+__end_of_main FCE 0 CODE 0 maintext dist/default/production\InternalEEPROM.X.production.o
+_EEADR 10D 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+_PORTA 5 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+_TRISA 85 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+eeprom_read@addr 71 0 COMMON 1 cstackCOMMON dist/default/production\InternalEEPROM.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__size_of_init_config 0 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__initialization FCE 0 CODE 0 cinit dist/default/production\InternalEEPROM.X.production.o
+__size_of_eeprom_read 0 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__size_of_eeprom_test 0 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+__pdataCOMMON 7D 0 COMMON 1 dataCOMMON dist/default/production\InternalEEPROM.X.production.o
+_STATUSbits 3 0 ABS 0 - dist/default/production\InternalEEPROM.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7E7 FCE 19 2
+text1 0 5A4 B48 2A 2
+text2 0 563 AC6 B 2
+text3 0 56E ADC C 2
+text4 0 553 AA6 6 2
+text5 0 631 C62 36 2
+text6 0 5CE B9C 2D 2
+text7 0 58D B1A 17 2
+text8 0 5FB BF6 36 2
+text9 0 667 CCE 59 2
+text10 0 6C0 D80 69 2
+idataCOMMON 0 552 AA4 1 2
+maintext 0 729 E52 BE 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 22 1
+inittext 0 57A AF4 13 2
+reset_vec 0 0 0 3 2
+idataBANK0 0 559 AB2 A 2
+config 0 2007 400E 1 2
+# OTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by OTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
